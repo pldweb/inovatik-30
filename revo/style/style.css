@@ -421,9 +421,107 @@ button.btn.btn-primary {
   padding-bottom: 0px;
 }
 
+/* Testimoni Section */
+
+#testimoni-section {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(../assets/testimonials-background.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
 
 
+.testimoni .card{
+  background-color: var(--form-color);
+  padding: 35px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
 
+.testimoni img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: auto;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.card-testimoni {
+  font-style: italic;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.card-name {
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.card-body.testimoni {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* get Section */
+
+#get-section {
+  background-color: var(--section-color);
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.get .button-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
+.card-horizon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: var(--form-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.card-horizon img {
+  max-width: 200px;
+  height: auto;
+}
+
+.card-horizon .card-body {
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 25px;
+  width: calc(100% - 200px);
+}
+
+
+.card-horizon .title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-horizon .description {
+  font-size: 15px;
+}
 /* Breakpoints */
 
 @media (min-width: 1200px) {
