@@ -57,6 +57,9 @@ h6 {
 
 nav.custom-navbar {
   background-color: var(--second-color);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 img.logo-image {
@@ -70,7 +73,7 @@ img.logo-image {
 .custom-navbar li a {
    font-weight: 600;
    text-transform: none;
-   font-size: .825rem;
+   font-size: .900rem;
    color: white;
    font-style: normal;
 }
@@ -78,6 +81,134 @@ img.logo-image {
 .custom-navbar li a:hover {
   color: var(--primary-color);
 }
+
+
+/* Banner section  */
+
+#banner-section {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(../assets/header-background.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+.custom-banner .img-fluid {
+  height: 350px;
+  object-fit: cover;
+}
+
+.custom-banner .image-text {
+  padding-left: 2rem;
+}
+
+.custom-banner .title{
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 5rem;
+  margin-bottom: 20px;
+}
+
+.custom-banner .description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.custom-banner .button-banner {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: .5rem;
+}
+
+a.btn.btn-primary.white-stroke:hover ,
+a.btn.btn-primary  {
+  font-weight: 700;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 16px 42px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+a.btn.btn-primary.white-stroke {
+  background-color: transparent;
+  border-color: white;
+  border: 1px solid white;
+}
+
+  
+a.btn.btn-primary.hover-stroke:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+
+
+.swiper-button-prev, .swiper-button-next {
+    color: white;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 1.5rem;
+}
+
+.custom-banner .swiper-pagination {
+bottom: -5px;
+}
+
+.custom-banner span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: var(--primary-color);
+}
+
+.custom-banner .swiper {
+  padding-bottom: 40px;
+}
+
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.client .client-image {
+  margin-top: 20px;
+}
+.client img {
+  max-height: 30px;
+  margin: 0 1rem;
+}
+
+/* register-section */
+
+#register-section {
+  background: #0C0433;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.custom-register a.custom-list {
+  text-decoration: none;
+  color: white;
+}
+
+.custom-register ul {
+  padding-left: 0px;
+  list-style: none;
+}
+
+.list .feather {
+  width: 20px;
+  margin-right: 10px;
+}
+
+
+
+
+/* Breakpoints */
 
 @media (min-width: 1200px) {
   .container-fluid.long {

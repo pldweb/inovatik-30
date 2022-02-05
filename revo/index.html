@@ -13,6 +13,8 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <!-- Link Css -->
 
     <link rel="stylesheet" href="style/style.css" />
@@ -21,14 +23,16 @@
 
     <link rel="stylesheet" href="https://raw.githack.com/pldweb/PlusJakartaSans/master/fonts/webfonts/plusjakartasans.css" />
 
+    <script src="https://unpkg.com/feather-icons"></script>
+
+
     <title>Hello, world!</title>
   </head>
   <body>
-
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar">
+    <nav id="navbar-section" class="navbar navbar-expand-lg custom-navbar">
       <div class="container-fluid long">
-        <a class="navbar-brand" href="#"><img src="assets/logo.svg" alt="" srcset="" class="logo-image"></a>
+        <a class="navbar-brand" href="#"><img src="assets/logo.svg" alt="" srcset="" class="logo-image" /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -40,7 +44,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -66,7 +70,142 @@
     </nav>
     <!-- Akhir Navbar -->
 
+    <div id="banner-section" class="custom-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                      <img src="/assets/header-slide-1.jpg" alt="" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="image-text">
+                        <div class="title">Prototype And Desktop App</div>
+                        <div class="description">The first desktop app for web designers. Create beautiful websites with minimum HTML/CSS</div>
+                        <div class="button-banner">
+                          <a href="#" class="btn btn-primary hover-stroke">Free Trial</a>
+                          <a href="#" class="btn btn-primary white-stroke">Discover</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                      <img src="/assets/header-slide-2.jpg" alt="" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="image-text">
+                        <div class="title">Landing Page And Marketing</div>
+                        <div class="description">The first desktop app for web designers. Create beautiful websites with minimum HTML/CSS</div>
+                        <div class="button-banner">
+                          <a href="#" class="btn btn-primary hover-stroke">Free Trial</a>
+                          <a href="#" class="btn btn-primary white-stroke">Discover</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                      <img src="/assets/header-slide-3.jpg" alt="" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="image-text">
+                        <div class="title">Graphic Design And Animation</div>
+                        <div class="description">The first desktop app for web designers. Create beautiful websites with minimum HTML/CSS</div>
+                        <div class="button-banner">
+                          <a href="#" class="btn btn-primary hover-stroke">Free Trial</a>
+                          <a href="#" class="btn btn-primary white-stroke">Discover</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="swiper-pagination"></div>
 
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="client">
+             <div class="title-client">Featured In</div>
+             <div class="client-image">
+             <img src="/assets/partner-logo-1.png" alt="" class="img-fluid">
+             <img src="/assets/partner-logo-2.png" alt="" class="img-fluid">
+             <img src="/assets/partner-logo-3.png" alt="" class="img-fluid">
+             <img src="/assets/partner-logo-4.png" alt="" class="img-fluid">
+             <img src="/assets/partner-logo-5.png" alt="" class="img-fluid">
+             </div>
+               </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Akhir Banner Section  -->
+
+  <div id="register-section" class="custom-register">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Register For The Free Trial</h2>
+          <p>You are just a few clicks away from using the first desktop app dedicated to web designers and developers. Fill out the form to get the 30-day trial and you will receive the download link</p>
+          <ul>
+            <li class="list">
+              <i data-feather="check"></i>
+
+              <a href="" class="custom-list">
+                Prototype easier using intuitive features and design tools</a>
+              </li>
+            <li class="list">
+              <i data-feather="check"></i>
+
+              <a href="" class="custom-list">Prototype easier using intuitive features and design tools</a>
+            </li>
+            <li class="list">
+              <i data-feather="check"></i>
+              <a href="" class="custom-list">
+Prototype easier using intuitive features and design tools</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- Script Custom -->
+
+
+    <script>
+      feather.replace()
+    </script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="script/navbar.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"
+      integrity="sha512-Pa4Jto+LuCGBHy2/POQEbTh0reuoiEXQWXGn8S7aRlhcwpVkO8+4uoZVSOqUjdCsE+77oygfu2Tl+7qGHGIWsw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Script Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
