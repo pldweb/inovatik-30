@@ -1,0 +1,86 @@
+:root {
+  --primary-color: #3DCAC8;
+  --second-color: #3A3458;
+}
+
+
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body,
+p {
+  color: #ffffff;
+  font: 400 1rem/1.625rem Plus Jakarta Sans, sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.125rem;
+  line-height: 2.625rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+/* General */
+
+nav.custom-navbar {
+  background-color: var(--second-color);
+}
+
+img.logo-image {
+  height: 25px;
+}
+
+.custom-navbar li {
+  margin-left: 15px;
+}
+
+.custom-navbar li a {
+   font-weight: 600;
+   text-transform: none;
+   font-size: .825rem;
+   color: white;
+   font-style: normal;
+}
+
+.custom-navbar li a:hover {
+  color: var(--primary-color);
+}
+
+@media (min-width: 1200px) {
+  .container-fluid.long {
+    width: 1300px;
+  }
+}
