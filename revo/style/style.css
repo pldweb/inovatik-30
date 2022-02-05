@@ -522,6 +522,61 @@ button.btn.btn-primary {
 .card-horizon .description {
   font-size: 15px;
 }
+
+/* footer section  */
+
+footer {
+  background-color: var(--form-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title-footer {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+footer p {
+  font-size: 15px;
+  
+}
+
+footer .icon {
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--section-color);
+  margin: 0 0 0 5px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+ footer .icon span {
+   width: 20px;
+   height: 20px;
+   text-align: center;
+   vertical-align: sub;
+  color: white;
+ }
+
+footer .icon svg {
+  width: inherit;
+  display: block;
+}
+.social-image {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+
+.text-right {
+  text-align: right;
+}
+.text-right p {
+  margin: 0;
+}
+
 /* Breakpoints */
 
 @media (min-width: 1200px) {
