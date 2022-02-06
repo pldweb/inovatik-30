@@ -61,6 +61,15 @@ img {
   -o-border-radius: 10px;
 }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+  visibility: hidden;
+}
+
 /* General */
 
 nav.custom-navbar {
@@ -92,7 +101,6 @@ img.logo-image {
 
 /* Pro Section */
 
-
 /* Banner section  */
 
 #banner-section {
@@ -102,20 +110,19 @@ img.logo-image {
   padding-bottom: 150px;
 }
 
-.custom-banner .img-fluid {
-  height: 350px;
-  object-fit: cover;
+.custom-banner img {
+  margin-bottom: 20px;
 }
 
-.custom-banner .image-text {
-  padding-left: 2rem;
+.custom-banner {
+  text-align: center;
 }
 
 .custom-banner .title {
-  font-size: 4rem;
-  font-weight: 900;
-  line-height: 5rem;
-  margin-bottom: 20px;
+      font-size: 3rem;
+    font-weight: 900;
+    line-height: 4rem;
+    margin-bottom: 20px;
 }
 
 .custom-banner .description {
@@ -124,9 +131,11 @@ img.logo-image {
 }
 
 .custom-banner .button-banner {
-  display: flex;
-  justify-content: flex-start;
-  column-gap: 0.5rem;
+          display: flex;
+    justify-content: center;
+    column-gap: 0.5rem;
+    flex-wrap: wrap;
+    row-gap: .5rem;
 }
 
 a.btn.btn-primary.white-stroke:hover,
@@ -185,6 +194,10 @@ a.btn.btn-primary.hover-stroke:hover {
 
 .client .client-image {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 1.2rem;
 }
 .client img {
   max-height: 30px;
@@ -211,6 +224,7 @@ a.btn.btn-primary.hover-stroke:hover {
 
 .feature .list {
   margin-bottom: 10px;
+  display: flex;
 }
 .feature a.custom-list {
   text-decoration: none;
@@ -230,7 +244,7 @@ a.btn.btn-primary.hover-stroke:hover {
   padding: 2px;
   width: 20px;
   margin-right: 10px;
-  background-color:var(--form-color) ;
+  background-color: var(--form-color);
   height: 20px;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -304,14 +318,13 @@ button.btn.btn-primary {
 
 /* Repo Section */
 
-
 #repo-section {
   background: #0c0433;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
- .mid-text {
+.mid-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,7 +333,7 @@ button.btn.btn-primary {
 }
 
 .mid-text p {
-  width: 60%;
+  width: 100%;
 }
 
 .repo .card {
@@ -337,7 +350,6 @@ button.btn.btn-primary {
   -o-border-radius: 20px;
 }
 
-
 .repo .card-body {
   display: flex;
   justify-content: center;
@@ -352,15 +364,14 @@ button.btn.btn-primary {
   margin-bottom: 15px;
 }
 
-.repo .card span   {
+.repo .card span {
   height: auto;
   width: 100px;
 }
 
-.repo .card span  svg {
+.repo .card span svg {
   width: inherit;
 }
-
 
 /* Pro Section  */
 #pro-section {
@@ -374,11 +385,10 @@ button.btn.btn-primary {
   padding-left: 2rem;
 }
 
-
 /* Design-section */
 
 #design-section {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(../assets/details-2-background.jpg) center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../assets/details-2-background.jpg) center center no-repeat;
   background-size: cover;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -414,9 +424,8 @@ button.btn.btn-primary {
 
 /* Video Section */
 
-
 #video-section {
-  background: var(--section-color);  
+  background: var(--section-color);
   padding-top: 80px;
   padding-bottom: 0px;
 }
@@ -424,14 +433,13 @@ button.btn.btn-primary {
 /* Testimoni Section */
 
 #testimoni-section {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(../assets/testimonials-background.jpg) center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../assets/testimonials-background.jpg) center center no-repeat;
   background-size: cover;
   padding-top: 80px;
   padding-bottom: 160px;
 }
 
-
-.testimoni .card{
+.testimoni .card {
   background-color: var(--form-color);
   padding: 35px 20px;
   border-radius: 10px;
@@ -481,9 +489,9 @@ button.btn.btn-primary {
 }
 
 .get .button-container {
-    display: flex;
-    justify-content: center;
-    column-gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 0.5rem;
 }
 
 .card-horizon {
@@ -512,7 +520,6 @@ button.btn.btn-primary {
   width: calc(100% - 200px);
 }
 
-
 .card-horizon .title {
   font-size: 1.2rem;
   font-weight: 700;
@@ -538,7 +545,6 @@ footer {
 }
 footer p {
   font-size: 15px;
-  
 }
 
 footer .icon {
@@ -552,13 +558,13 @@ footer .icon {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
- footer .icon span {
-   width: 20px;
-   height: 20px;
-   text-align: center;
-   vertical-align: sub;
+footer .icon span {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  vertical-align: sub;
   color: white;
- }
+}
 
 footer .icon svg {
   width: inherit;
@@ -568,7 +574,6 @@ footer .icon svg {
   margin-bottom: 20px;
   text-align: right;
 }
-
 
 .text-right {
   text-align: right;
@@ -582,7 +587,7 @@ footer ul {
   padding-left: 0;
 }
 
-footer ul li a{
+footer ul li a {
   text-decoration: none;
   color: white;
 }
@@ -597,8 +602,122 @@ footer ul li a{
 
 /* Breakpoints */
 
+@media (min-width: 576px) and (max-width: 767px) {
+
+ 
+
+
+  .custom-banner .title {
+    font-size: 2rem;
+  }
+
+  .register form {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 576px) {
+ 
+  .register form {
+    width: 100%;
+  }
+
+  .card-horizon {
+    flex-direction: column;
+  }
+  .card-horizon img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card-horizon .card-body {
+    width: 100%;
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .repo .card {
+    margin-bottom: 30px;
+  }
+
+  .repo .row , .testimoni .row{
+    margin: 0;
+  }
+}
+
+@media (max-width: 991px) {
+
+  footer .social-image, footer .text-right {
+    text-align: left !important;
+    
+  }
+
+  footer .social-image {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  footer .icon {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  .card-horizon {
+   margin-bottom: 30px;
+  }
+
+  .row.design {
+    flex-direction: column-reverse;
+  }
+
+  .image-design {
+    margin-bottom: 30px;
+  }
+
+  .pro .text {
+    padding-left: 0rem;
+}
+
+  .image-pro {
+    margin-bottom: 30px;
+  }
+  .feature {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-banner .img-fluid {
+    height: 350px;
+    object-fit: cover;
+  }
+  .register form {
+    width: 100%;
+  }
+    .mid-text p {
+    width: 60%;
+  }
+}
+
 @media (min-width: 1200px) {
+
+  /* General */
   .container-fluid.long {
     width: 1300px;
   }
+
+  
+
+
+  /* Section */
+
+  .custom-banner .image-text {
+    padding-left: 2rem;
+  }
+
+
 }

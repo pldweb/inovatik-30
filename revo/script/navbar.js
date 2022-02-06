@@ -56,13 +56,18 @@ const cardSlider = new Swiper(".testi", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 70,
   breakpoints: {
+
+   576: {
+     slidesPerView: 1,
+   } ,
     // when window is <= 767px
-    767: {
-      slidesPerView: 1,
-    },
+  768: {
+    slidesPerView: 1,
+    spaceBetween: 0,
+  },
     // when window is <= 991px
     991: {
       slidesPerView: 3,
