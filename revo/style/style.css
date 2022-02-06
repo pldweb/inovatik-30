@@ -527,8 +527,8 @@ button.btn.btn-primary {
 
 footer {
   background-color: var(--form-color);
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 20px;
 }
 
 .title-footer {
@@ -575,6 +575,24 @@ footer .icon svg {
 }
 .text-right p {
   margin: 0;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.list-footer p {
+  margin-bottom: 0px;
+}
+
+.about-footer {
+  padding-right: 3rem;
 }
 
 /* Breakpoints */
